@@ -1,0 +1,11 @@
+{
+  "blazor": [
+    "wasm-blazor"
+  ],
+  "wasm": [
+    "wasm-blazor"
+  ],
+  "web": [
+    "wasm-blazor"
+  ]
+}

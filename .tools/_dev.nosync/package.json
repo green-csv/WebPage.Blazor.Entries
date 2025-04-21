@@ -1,0 +1,17 @@
+{
+  "name": "webpage.blazor.entries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:metadata": "node .src/generate-metadata.js",
+    "build:index": "node .src/generate-index.js",
+    "build:tags": "node .src/generate-tags.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {    
+    "gray-matter": "^4.0.3"
+  }
+}

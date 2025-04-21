@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "wasm-blazor",
+    "tags": [
+      "blazor",
+      "wasm",
+      "web"
+    ],
+    "translations": {
+      "en": {
+        "title": "Why I Abandoned Server-Side Rendering",
+        "date": "2025-04-21",
+        "filename": "posts/wasm-blazor/en.md",
+        "summary": "Exploring the choice to move entirely to client-side Blazor and ditch traditional SSR.",
+        "cover": "posts-assets/wasm-blazor/banner.png"
+      },
+      "es": {
+        "title": "Por qué abandoné el renderizado del lado del servidor",
+        "date": "2025-04-21",
+        "filename": "posts/wasm-blazor/es.md",
+        "summary": "Explorando la decisión de mover todo a Blazor en el cliente y olvidar el SSR tradicional.",
+        "cover": "posts-assets/wasm-blazor/banner.png"
+      }
+    }
+  }
+]

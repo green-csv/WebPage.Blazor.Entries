@@ -1,0 +1,23 @@
+{
+  "author": {
+    "name": "A Z.",
+    "email": "aruiz@greencsv.dev",
+    "url": "https://greencsv.dev"
+  },
+  "license": {
+    "type": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "repo": {
+    "name": "blog-content",
+    "url": "https://gitlab.com/greencsv/blog-content",
+    "branch": "main"
+  },
+  "defaultLanguage": "en",
+  "supportedLanguages": [
+    "en",
+    "es"
+  ],
+  "description": "This vault is a multilingual, Git-backed knowledge base rendered through Blazor WebAssembly. Every entry is a versioned artifact.",
+  "generated": "2025-04-21T22:23:33.703Z"
+}
