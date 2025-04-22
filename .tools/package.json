@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:metadata": "node .src/generate-metadata.js",
-    "build:index": "node .src/generate-index.js",
-    "build:tags": "node .src/generate-tags.js"
+    "build:metadata": "node src/generate-metadata.js",
+    "build:index": "node src/generate-index.js",
+    "build:tags": "node src/generate-tags.js"
   },
   "keywords": [],
   "author": "",
