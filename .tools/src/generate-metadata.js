@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "../../");
-const metadataFile = path.join(OUTPUT_DIR, "metadata.config.json");
+const metadataFile = path.join(OUTPUT_DIR, "posts-assets/metadata.config.json");
 
 // Load existing or start fresh
 let metadata = {};

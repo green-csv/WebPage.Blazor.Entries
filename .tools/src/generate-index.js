@@ -3,8 +3,10 @@ const path = require("path");
 const matter = require("gray-matter");
 
 const ROOT_DIR = path.resolve(__dirname, "../../");
+
 const POSTS_DIR = path.join(ROOT_DIR, "posts");
-const OUTPUT_FILE = path.join(ROOT_DIR, "index.json");
+
+const OUTPUT_FILE = path.join(ROOT_DIR, "posts-assets/index.json");
 
 const isMarkdown = (filename) => filename.endsWith(".md");
 
