@@ -2,8 +2,8 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT_DIR = path.resolve(__dirname, "../../");
-const INDEX_FILE = path.join(ROOT_DIR, "/posts-assets/index.json");
-const TAGS_FILE = path.join(ROOT_DIR, "posts-assets/tags.json");
+const INDEX_FILE = path.join(ROOT_DIR, "public/posts-assets/index.json");
+const TAGS_FILE = path.join(ROOT_DIR, "public/posts-assets/tags.json");
 
 const generateTags = () => {
   const index = JSON.parse(fs.readFileSync(INDEX_FILE, "utf-8"));

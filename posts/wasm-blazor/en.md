@@ -9,21 +9,34 @@ language: en
 published: true
 ---
 
-There was a time when I thought SSR was inevitable.
 
-Until I tried running everything inside the browser with Blazor WASM.
+There was a time when I thought SSR was inevitable — the “professional” way.
 
-No server. No runtime backend. Just a static push to GitLab Pages.
+Until I tried running everything inside the browser with **Blazor WASM**.
 
-And it worked.
+> No server. No runtime backend. Just a static push to GitLab Pages.
 
-### Key reasons:
+And it worked. Like *really* worked.
 
-- Full control over deployment
-- Zero backend costs
-- Markdown content, versioned in Git
-- Rendered by .NET in the browser
+---
 
-The result? Faster load times, fewer moving parts, and a dev workflow that feels like breathing.
+## 🔥 Key reasons I ditched SSR:
 
-> We don't need servers. We need clarity.
+- ✅ Full control over deployment
+- 💸 Zero backend costs
+- 🧠 Markdown content, versioned in Git
+- ⚙️ Rendered by .NET directly in the browser
+- 📦 Published with GitLab Pages
+
+---
+
+## 🧪 Here’s a code block to test highlighting
+
+```csharp
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var data = await Http.GetFromJsonAsync<Post>("posts/wasm-blazor/en.json");
+        Console.WriteLine(data.Title);
+    }
+}
