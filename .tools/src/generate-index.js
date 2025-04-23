@@ -1,16 +1,16 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
+const { config, paths } = require("./config");
 
-const ROOT_DIR = path.resolve(__dirname, "../../");
 
-const POSTS_DIR = path.join(ROOT_DIR, "posts");
-
-const OUTPUT_FILE = path.join(ROOT_DIR, "posts-assets/index.json");
+const POSTS_DIR = path.join(paths.ROOT_DIR, "posts");
+const OUTPUT_FILE = path.join(paths.ROOT_DIR, "public/posts-assets/index.json");
 
 const isMarkdown = (filename) => filename.endsWith(".md");
 
 const buildIndex = async () => {
+
   const postFolders = fs.readdirSync(POSTS_DIR).filter((f) =>
     fs.statSync(path.join(POSTS_DIR, f)).isDirectory()
   );
@@ -33,10 +33,13 @@ const buildIndex = async () => {
 
       const lang = data.language || "en";
 
+      const relativePath = path.relative(paths.ROOT_DIR, dir).replace(/\\/g, "/");
+      const baseName = path.basename(file, ".md");
+
       translations[lang] = {
         title: data.title || "Untitled",
         date: data.date || "1970-01-01",
-        filename: path.relative(ROOT_DIR, fullPath).replace(/\\/g, "/"),
+        filename: `${relativePath}/${baseName}.html`,
         summary: data.summary || "",
         cover: data.cover || null
       };
@@ -54,7 +57,8 @@ const buildIndex = async () => {
   }
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(index, null, 2));
-  console.log(`✅ index.json generated with ${index.length} posts`);
+
+  console.log(`✅ index.json generated with ${index.length} posts`);  
 };
 
 buildIndex();

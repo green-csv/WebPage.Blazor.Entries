@@ -1,8 +1,8 @@
 const path = require("path");
 const fs = require("fs");
+const { config, paths } = require("./config");
 
-const OUTPUT_DIR = path.resolve(__dirname, "../../");
-const metadataFile = path.join(OUTPUT_DIR, "posts-assets/metadata.config.json");
+const metadataFile = path.join(paths.ROOT_DIR, "public/posts-assets/metadata.config.json");
 
 // Load existing or start fresh
 let metadata = {};
@@ -11,7 +11,7 @@ if (fs.existsSync(metadataFile)) {
 } else {
   metadata = {
     author: {
-      name: "A Z.",
+      name: "A.",
       email: "aruiz@greencsv.dev",
       url: "https://greencsv.dev"
     },
@@ -20,8 +20,8 @@ if (fs.existsSync(metadataFile)) {
       url: "https://creativecommons.org/licenses/by/4.0/"
     },
     repo: {
-      name: "blog-content",
-      url: "https://gitlab.com/greencsv/blog-content",
+      name: "WebPage.Blazor.Entries",
+      url: "https://gitlab.com/green-csv/WebPage.Blazor.Entries",
       branch: "main"
     },
     defaultLanguage: "en",

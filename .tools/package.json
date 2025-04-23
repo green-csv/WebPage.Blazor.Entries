@@ -4,14 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:metadata": "node src/generate-metadata.js",
+    "build:html": "node src/generate-html.js",
     "build:index": "node src/generate-index.js",
+    "build:posts-index": "node src/generate-posts-index.js",
+    "build:metadata": "node src/generate-metadata.js",    
     "build:tags": "node src/generate-tags.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {    
-    "gray-matter": "^4.0.3"
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
+    "marked": "^15.0.9"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@eslint/json": "^0.12.0",
+    "@eslint/markdown": "^6.4.0",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0"
   }
 }
