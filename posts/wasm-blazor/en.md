@@ -4,7 +4,7 @@ slug: "wasm-blazor"
 date: "2025-04-21"
 tags: ["blazor", "wasm", "web"]
 summary: "Exploring the choice to move entirely to client-side Blazor and ditch traditional SSR."
-cover: "posts-assets/wasm-blazor/banner.png"
+cover: ""
 language: en
 published: true
 ---

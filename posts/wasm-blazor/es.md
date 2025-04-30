@@ -4,7 +4,7 @@ slug: "wasm-blazor"
 date: "2025-04-21"
 tags: ["blazor", "wasm", "web"]
 summary: "Explorando la decisión de mover todo a Blazor en el cliente y olvidar el SSR tradicional."
-cover: "posts-assets/wasm-blazor/banner.png"
+cover: ""
 language: es
 published: true
 ---
