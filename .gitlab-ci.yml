@@ -16,7 +16,5 @@ create-pages:
     - cd .tools
     - npm ci
     - npm run build:html
-    - npm run build:index
-    - npm run build:posts-index
-    - npm run build:metadata
-    - npm run build:tags
+    - npm run build:index    
+    - npm run build:metadata    

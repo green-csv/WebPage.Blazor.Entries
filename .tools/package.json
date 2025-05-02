@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:html": "node src/generate-html.js",
-    "build:index": "node src/generate-index.js",
-    "build:posts-index": "node src/generate-posts-index.js",
-    "build:metadata": "node src/generate-metadata.js",    
-    "build:tags": "node src/generate-tags.js"
+    "build:index": "node src/generate-index.js",  
+    "build:metadata": "node src/generate-metadata.js"
   },
   "keywords": [],
   "author": "",
