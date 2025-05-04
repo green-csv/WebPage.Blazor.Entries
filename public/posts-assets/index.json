@@ -1,24 +1,16 @@
 [
   {
-    "slug": "wasm-blazor",
+    "slug": "test",
     "tags": [
-      "blazor",
-      "wasm",
-      "web"
+      "test",
+      "markdown"
     ],
     "translations": {
       "en": {
-        "title": "Why I Abandoned Server-Side Rendering",
-        "date": "2025-04-21",
-        "filename": "posts/wasm-blazor/en.html",
-        "summary": "Exploring the choice to move entirely to client-side Blazor and ditch traditional SSR.",
-        "cover": null
-      },
-      "es": {
-        "title": "Por qué abandoné el renderizado del lado del servidor",
-        "date": "2025-04-21",
-        "filename": "posts/wasm-blazor/es.html",
-        "summary": "Explorando la decisión de mover todo a Blazor en el cliente y olvidar el SSR tradicional.",
+        "title": "Test",
+        "date": "2025-05-03T00:00:00.000Z",
+        "filename": "posts/test/en.html",
+        "summary": "This post has testing purpses, yeah only that",
         "cover": null
       }
     }

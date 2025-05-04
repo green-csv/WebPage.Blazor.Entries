@@ -1,0 +1,14 @@
+<p>Every time I start or pull a .NET project in JetBrains Rider I run this short checklist. It kills most environment-specific bugs that have burned me, especially with Blazor + WASM.</p>
+<ul>
+<li><p><strong>Namespace provider</strong><br>  Mark each <code>src/</code> folder as a Namespace provider (right-click folder → <strong>Mark Directory As → Namespace Provider</strong>).</p>
+</li>
+<li><p><strong>MSBuild version (Windows Only)</strong><br>  force Rider to use the exact MSBuild that ships with Visual Studio. A minor-version mismatch spawns divergent assets and mysterious warnings.</p>
+</li>
+<li><p><strong>.NET CLI path</strong><br>  Verify the <code>dotnet</code> executable active, multiple SDKs + Rider’s bundled runtime can lead to mismatches (e.g. <code>*.blazor.css</code> not resolving).</p>
+</li>
+</ul>
+<p>Anything else to add?</p>
+<blockquote>
+<p>💡 <strong>Got another tip?</strong> Drop me an email at <a href="mailto:aruiz@greencsv.dev">aruiz@greencsv.dev</a>!</p>
+</blockquote>
+<p>while I add some comment service</p>
