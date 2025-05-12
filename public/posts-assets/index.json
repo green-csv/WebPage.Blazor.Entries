@@ -1,5 +1,46 @@
 [
   {
+    "slug": "ai-here-ai-there-ai-blah-blah-blah",
+    "tags": [
+      "reflection",
+      "methodology",
+      "AI"
+    ],
+    "translations": {
+      "en": {
+        "title": "AI here, AI there, AI Blah Blah Blah Blah",
+        "date": "2025-05-07T00:00:00.000Z",
+        "filename": "posts/ai-here-ai-there-ai-blah-blah-blah/en.html",
+        "summary": "Critical reflection on the saturation of fads in AI and the importance of solid foundations. summary by GPT",
+        "cover": null
+      },
+      "es": {
+        "title": "AI aquí, AI allá, AI Blah Blah Blah",
+        "date": "2025-05-07T00:00:00.000Z",
+        "filename": "posts/ai-here-ai-there-ai-blah-blah-blah/es.html",
+        "summary": "Reflexión crítica sobre la saturación de modas pasajeras en IA y la importancia de fundamentos sólidos. resumen por GPT",
+        "cover": null
+      }
+    }
+  },
+  {
+    "slug": "pre-flight-checklist-rider",
+    "tags": [
+      "rider",
+      "dot-net",
+      "windows"
+    ],
+    "translations": {
+      "en": {
+        "title": "Pre-flight checklist for Rider (.Net)",
+        "date": "2025-05-02T00:00:00.000Z",
+        "filename": "posts/pre-flight-checklist-rider/en.html",
+        "summary": "Rider pre-flight notes to avoid .NET/Blazor WASM environment hiccups.",
+        "cover": null
+      }
+    }
+  },
+  {
     "slug": "test",
     "tags": [
       "test",
@@ -8,7 +49,7 @@
     "translations": {
       "en": {
         "title": "Test",
-        "date": "2025-05-03T00:00:00.000Z",
+        "date": "2000-12-01T00:00:00.000Z",
         "filename": "posts/test/en.html",
         "summary": "This post has testing purpses, yeah only that",
         "cover": null
