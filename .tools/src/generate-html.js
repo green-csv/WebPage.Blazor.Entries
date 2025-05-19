@@ -21,8 +21,10 @@ marked.setOptions({
 });
 
 function stripFrontmatter(md) {
-  const match = md.match(/^---\n([\s\S]*?)\n---\n/);
-  return match ? md.slice(match[0].length) : md;
+  return md.replace(
+    /^---\r?\n[\s\S]*?\r?\n---\r?\n?/,
+    ""
+  );
 }
 
 function shouldRender(input, output) {
