@@ -5,7 +5,7 @@ const { config, paths } = require("./config");
 
 
 const POSTS_DIR = path.join(paths.ROOT_DIR, "posts");
-const OUTPUT_FILE = path.join(paths.ROOT_DIR, "public/posts-assets/index.json");
+const OUTPUT_FILE = path.join(paths.ROOT_DIR, "docs/posts-assets/index.json");
 
 const isMarkdown = (filename) => filename.endsWith(".md");
 

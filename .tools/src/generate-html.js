@@ -11,7 +11,7 @@ const flags = {
 };
 
 const POSTS_DIR = path.resolve(paths.ROOT_DIR, "posts");
-const OUTPUT_DIR = path.resolve(paths.ROOT_DIR, "public/posts");
+const OUTPUT_DIR = path.resolve(paths.ROOT_DIR, "docs/posts");
 
 marked.setOptions({
   highlight(code, lang) {

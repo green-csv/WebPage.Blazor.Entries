@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const { config, paths } = require("./config");
 
-const metadataFile = path.join(paths.ROOT_DIR, "public/posts-assets/metadata.config.json");
+const metadataFile = path.join(paths.ROOT_DIR, "docs/posts-assets/metadata.config.json");
 
 // Load existing or start fresh
 let metadata = {};
