@@ -8,8 +8,10 @@ const metadataFile = path.join(paths.ROOT_DIR, "docs/posts-assets/metadata.confi
 let metadata = {};
 if (fs.existsSync(metadataFile)) {
   metadata = JSON.parse(fs.readFileSync(metadataFile, "utf-8"));
-} else {
+}
+
   metadata = {
+    ...metadata,
     author: {
       name: "A.",
       email: "aruiz@greencsv.dev",
@@ -28,7 +30,6 @@ if (fs.existsSync(metadataFile)) {
     supportedLanguages: ["en", "es"],
     description: "This vault is a multilingual, Git-backed knowledge base rendered through Blazor WebAssembly. Every entry is a versioned artifact."
   };
-}
 
 // Always update this
 metadata.generated = new Date().toISOString();

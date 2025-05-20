@@ -10,7 +10,7 @@
   },
   "repo": {
     "name": "WebPage.Blazor.Entries",
-    "url": "https://gitlab.com/green-csv/WebPage.Blazor.Entries",
+    "url": "https://github.com/green-csv/WebPage.Blazor.Entries",
     "branch": "main"
   },
   "defaultLanguage": "en",
@@ -19,5 +19,5 @@
     "es"
   ],
   "description": "This vault is a multilingual, Git-backed knowledge base rendered through Blazor WebAssembly. Every entry is a versioned artifact.",
-  "generated": "2025-05-20T14:54:44.941Z"
+  "generated": "2025-05-20T15:03:07.463Z"
 }
