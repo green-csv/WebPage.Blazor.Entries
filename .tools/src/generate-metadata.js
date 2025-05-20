@@ -21,7 +21,7 @@ if (fs.existsSync(metadataFile)) {
     },
     repo: {
       name: "WebPage.Blazor.Entries",
-      url: "https://gitlab.com/green-csv/WebPage.Blazor.Entries",
+      url: "https://github.com/green-csv/WebPage.Blazor.Entries",
       branch: "main"
     },
     defaultLanguage: "en",
