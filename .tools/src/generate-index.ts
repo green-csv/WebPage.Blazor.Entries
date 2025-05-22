@@ -1,10 +1,10 @@
 import { paths } from "./config.ts";
 import matterPkg from "npm:gray-matter@4.0.3";
 import {
-  join,
-  resolve,
-  relative,
   dirname,
+  join,
+  relative,
+  resolve,
 } from "https://deno.land/std@0.203.0/path/mod.ts";
 
 const matter = (matterPkg as any).default ?? matterPkg;

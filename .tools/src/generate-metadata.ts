@@ -2,7 +2,11 @@
 // Run with: deno run --allow-read --allow-write update-metadata.ts
 
 import { paths } from "./config.ts";
-import { join, dirname, resolve } from "https://deno.land/std@0.203.0/path/mod.ts";
+import {
+  dirname,
+  join,
+  resolve,
+} from "https://deno.land/std@0.203.0/path/mod.ts";
 
 interface Metadata {
   author?: {
