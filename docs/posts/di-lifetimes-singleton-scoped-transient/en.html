@@ -1,16 +1,26 @@
-<h1>Understanding Dependency Injection Lifetimes in .NET: Singleton, Scoped &amp; Transient</h1>
+<h1 id="understanding-dependency-injection-lifetimes-in-net-singleton-scoped--transient"><a href="#understanding-dependency-injection-lifetimes-in-net-singleton-scoped--transient">Understanding Dependency Injection Lifetimes in .NET: Singleton, Scoped &#x26; Transient</a></h1>
 <p>Modern applications rely on decoupled components and clear separation of concerns. At the heart of this lies <strong>Inversion of Control (IoC)</strong>—the idea that you hand off the responsibility for creating and managing object lifetimes to an external container or framework. <strong>Dependency Injection (DI)</strong> is a concrete pattern for implementing IoC: you declare your dependencies, and the container wires them up for you.</p>
 <p>ASP NET Core’s built-in DI container takes this a step further by offering three distinct <strong>lifetimes</strong>:</p>
 <ul>
-<li><p><strong>Singleton</strong>: one instance for the entire application</p>
+<li>
+<p><strong>Singleton</strong>: one instance for the entire application</p>
 </li>
-<li><p><strong>Scoped</strong>: one instance per logical operation (e.g. per HTTP request)</p>
+<li>
+<p><strong>Scoped</strong>: one instance per logical operation (e.g. per HTTP request)</p>
 </li>
-<li><p><strong>Transient</strong>: a new instance every time it’s requested</p>
+<li>
+<p><strong>Transient</strong>: a new instance every time it’s requested</p>
 </li>
 </ul>
 <p>Understanding these lifetimes is crucial for building efficient, maintainable, and thread-safe services—especially when working with resources like database contexts, HTTP clients, or long-running background jobs.</p>
-<p>Understanding these lifetimes is only the first step. Behind them lies a rich landscape of design patterns, best practices, and advanced container features (Seemann &amp; van Deursen, 2019)[^1]. If you’re intrigued by how DI shapes modular, testable, and maintainable codebases, dive into the full article for practical examples and deeper insights into IoC, constructor injection, and lifetime management (Fowler, 2004)[^2].</p>
-<h2>Footnotes</h2>
-<p>[^1]: Seemann, M., &amp; van Deursen, S. (2019). <em>Dependency Injection Principles, Practices, and Patterns</em>. Addison-Wesley Professional. ISBN 978-1-61729-473-0.</p>
-<p>[^2]:Fowler, M. (2004, January 23). <em>Inversion of Control Containers and the Dependency Injection pattern</em>. Retrieved from <a href="https://martinfowler.com/articles/injection.html">https://martinfowler.com/articles/injection.html</a></p>
+<p>Understanding these lifetimes is only the first step. Behind them lies a rich landscape of design patterns, best practices, and advanced container features (Seemann &#x26; van Deursen, 2019)<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>. If you’re intrigued by how DI shapes modular, testable, and maintainable codebases, dive into the full article for practical examples and deeper insights into IoC, constructor injection, and lifetime management (Fowler, 2004)<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label"><a href="#footnote-label">Footnotes</a></h2>
+<ol>
+<li id="user-content-fn-1">
+<p>Seemann, M., &#x26; van Deursen, S. (2019). <em>Dependency Injection Principles, Practices, and Patterns</em>. Addison-Wesley Professional. ISBN 978-1-61729-473-0. <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p>Fowler, M. (2004, January 23). <em>Inversion of Control Containers and the Dependency Injection pattern</em>. Retrieved from <a href="https://martinfowler.com/articles/injection.html">https://martinfowler.com/articles/injection.html</a> <a href="#user-content-fnref-2" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>

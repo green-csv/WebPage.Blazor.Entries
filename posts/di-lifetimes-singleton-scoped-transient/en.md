@@ -33,7 +33,6 @@ Understanding these lifetimes is crucial for building efficient, maintainable, a
 
 Understanding these lifetimes is only the first step. Behind them lies a rich landscape of design patterns, best practices, and advanced container features (Seemann & van Deursen, 2019)[^1]. If you’re intrigued by how DI shapes modular, testable, and maintainable codebases, dive into the full article for practical examples and deeper insights into IoC, constructor injection, and lifetime management (Fowler, 2004)[^2].
 
-## Footnotes
 
 [^1]: Seemann, M., & van Deursen, S. (2019). _Dependency Injection Principles, Practices, and Patterns_. Addison-Wesley Professional. ISBN 978-1-61729-473-0.
     

@@ -1,19 +1,59 @@
-<h1>Test Markdown Features</h1>
+<h2 id="contents"><a href="#contents">Contents</a></h2>
+<ul>
+<li><a href="#test-markdown-features">Test Markdown Features</a>
+<ul>
+<li><a href="#headings">Headings</a></li>
+</ul>
+</li>
+<li><a href="#h1-heading">H1 Heading</a>
+<ul>
+<li><a href="#h2-heading">H2 Heading</a>
+<ul>
+<li><a href="#h3-heading">H3 Heading</a>
+<ul>
+<li><a href="#h4-heading">H4 Heading</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#paragraphs-and-emphasis">Paragraphs and Emphasis</a></li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#lists">Lists</a>
+<ul>
+<li><a href="#unordered-list">Unordered List</a></li>
+<li><a href="#ordered-list">Ordered List</a></li>
+</ul>
+</li>
+<li><a href="#code-blocks">Code Blocks</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#links-and-images">Links and Images</a></li>
+<li><a href="#horizontal-rule">Horizontal Rule</a>
+<ul>
+<li><a href="#task-list">Task List</a></li>
+</ul>
+</li>
+<li><a href="#emoji">Emoji</a></li>
+<li><a href="#raw-html">Raw HTML</a></li>
+<li><a href="#definition-list">Definition List</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="test-markdown-features"><a href="#test-markdown-features">Test Markdown Features</a></h1>
 <p>This file contains example Markdown elements to use as a visual reference.</p>
 <hr>
-<h2>Headings</h2>
-<h1>H1 Heading</h1>
-<h2>H2 Heading</h2>
-<h3>H3 Heading</h3>
-<h4>H4 Heading</h4>
-<h5>H5 Heading</h5>
-<h6>H6 Heading</h6>
+<h2 id="headings"><a href="#headings">Headings</a></h2>
+<h1 id="h1-heading"><a href="#h1-heading">H1 Heading</a></h1>
+<h2 id="h2-heading"><a href="#h2-heading">H2 Heading</a></h2>
+<h3 id="h3-heading"><a href="#h3-heading">H3 Heading</a></h3>
+<h4 id="h4-heading"><a href="#h4-heading">H4 Heading</a></h4>
+<h5 id="h5-heading"><a href="#h5-heading">H5 Heading</a></h5>
+<h6 id="h6-heading"><a href="#h6-heading">H6 Heading</a></h6>
 <hr>
-<h2>Paragraphs and Emphasis</h2>
+<h2 id="paragraphs-and-emphasis"><a href="#paragraphs-and-emphasis">Paragraphs and Emphasis</a></h2>
 <p>Normal paragraph text. <strong>Bold text</strong>, <em>italic text</em>, <strong><em>bold italic</em></strong>, <del>strikethrough</del>.</p>
 <p>Inline code: <code>const x = 42;</code></p>
 <hr>
-<h2>Blockquotes</h2>
+<h2 id="blockquotes"><a href="#blockquotes">Blockquotes</a></h2>
 <blockquote>
 <p>This is a blockquote.</p>
 <blockquote>
@@ -24,113 +64,124 @@
 </blockquote>
 </blockquote>
 <hr>
-<h2>Lists</h2>
-<h3>Unordered List</h3>
+<h2 id="lists"><a href="#lists">Lists</a></h2>
+<h3 id="unordered-list"><a href="#unordered-list">Unordered List</a></h3>
 <ul>
-<li><p>Item one</p>
+<li>
+<p>Item one</p>
 </li>
-<li><p>Item two</p>
+<li>
+<p>Item two</p>
 <ul>
-<li><p>Nested item two.a</p>
+<li>
+<p>Nested item two.a</p>
 </li>
-<li><p>Nested item two.b</p>
+<li>
+<p>Nested item two.b</p>
 </li>
 </ul>
 </li>
-<li><p>Item three</p>
+<li>
+<p>Item three</p>
 </li>
 </ul>
-<h3>Ordered List</h3>
+<h3 id="ordered-list"><a href="#ordered-list">Ordered List</a></h3>
 <ol>
-<li><p>First item</p>
+<li>
+<p>First item</p>
 </li>
-<li><p>Second item</p>
+<li>
+<p>Second item</p>
 <ol>
-<li><p>Sub-first</p>
+<li>
+<p>Sub-first</p>
 </li>
-<li><p>Sub-second</p>
+<li>
+<p>Sub-second</p>
 </li>
 </ol>
 </li>
-<li><p>Third item</p>
+<li>
+<p>Third item</p>
 </li>
 </ol>
 <hr>
-<h2>Code Blocks</h2>
-<pre><code class="language-js">// JavaScript code block
-function greet(name) {
-  console.log(`Hello, ${name}!`);
+<h2 id="code-blocks"><a href="#code-blocks">Code Blocks</a></h2>
+<pre><code class="hljs language-js"><span class="hljs-comment">// JavaScript code block</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params">name</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>!`</span>);
 }
-greet(&#39;World&#39;);
+<span class="hljs-title function_">greet</span>(<span class="hljs-string">'World'</span>);
 </code></pre>
-<pre><code class="language-csharp">// C# code block
-public class Person {
-  public string Name { get; set; }
-  public void SayHi() =&gt; Console.WriteLine($&quot;Hi, {Name}&quot;);
+<pre><code class="hljs language-csharp"><span class="hljs-comment">// C# code block</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> {
+  <span class="hljs-keyword">public</span> <span class="hljs-built_in">string</span> Name { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">SayHi</span>()</span> => Console.WriteLine(<span class="hljs-string">$"Hi, <span class="hljs-subst">{Name}</span>"</span>);
 }
 </code></pre>
 <hr>
-<h2>Tables</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Feature</th>
-<th align="center">Supported</th>
-<th align="right">Notes</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Headings</td>
-<td align="center">✅</td>
-<td align="right">Levels 1–6</td>
-</tr>
-<tr>
-<td align="left">Emphasis</td>
-<td align="center">✅</td>
-<td align="right">Bold, italic, strikethrough</td>
-</tr>
-<tr>
-<td align="left">Lists</td>
-<td align="center">✅</td>
-<td align="right">Nested, ordered, unordered</td>
-</tr>
-<tr>
-<td align="left">Code blocks</td>
-<td align="center">✅</td>
-<td align="right">Fenced with language hint</td>
-</tr>
-<tr>
-<td align="left">Tables</td>
-<td align="center">✅</td>
-<td align="right">GitHub-style</td>
-</tr>
-<tr>
-<td align="left">Blockquotes</td>
-<td align="center">✅</td>
-<td align="right">Nested</td>
-</tr>
-</tbody></table>
+<h2 id="tables"><a href="#tables">Tables</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Feature</th><th align="center">Supported</th><th align="right">Notes</th></tr></thead><tbody><tr><td align="left">Headings</td><td align="center">✅</td><td align="right">Levels 1–6</td></tr><tr><td align="left">Emphasis</td><td align="center">✅</td><td align="right">Bold, italic, strikethrough</td></tr><tr><td align="left">Lists</td><td align="center">✅</td><td align="right">Nested, ordered, unordered</td></tr><tr><td align="left">Code blocks</td><td align="center">✅</td><td align="right">Fenced with language hint</td></tr><tr><td align="left">Tables</td><td align="center">✅</td><td align="right">GitHub-style</td></tr><tr><td align="left">Blockquotes</td><td align="center">✅</td><td align="right">Nested</td></tr></tbody></table>
 <hr>
-<h2>Links and Images</h2>
+<h2 id="links-and-images"><a href="#links-and-images">Links and Images</a></h2>
 <p><a href="https://greencsv.dev/">Visit GreenCSV.dev</a></p>
 <p><img src="https://via.placeholder.com/800x200" alt="Sample Cover Image" title="Cover Image Placeholder"></p>
 <hr>
-<h2>Horizontal Rule</h2>
+<h2 id="horizontal-rule"><a href="#horizontal-rule">Horizontal Rule</a></h2>
 <hr>
-<h3>Task List</h3>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Completed task  </li>
-<li><input disabled="" type="checkbox"> Incomplete task  </li>
-<li><input disabled="" type="checkbox"> Another one</li>
+<h3 id="task-list"><a href="#task-list">Task List</a></h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled> Completed task</li>
+<li class="task-list-item"><input type="checkbox" disabled> Incomplete task</li>
+<li class="task-list-item"><input type="checkbox" disabled> Another one</li>
 </ul>
 <hr>
-<h2>Emoji</h2>
+<h2 id="emoji"><a href="#emoji">Emoji</a></h2>
 <p>🎉 🚀 🐛 📦</p>
 <hr>
-<h2>Raw HTML</h2>
+<h2 id="raw-html"><a href="#raw-html">Raw HTML</a></h2>
 <div style="padding:1em; border:1px solid #333; background:#111; color:#0f0;"> ⚙️ This HTML block should appear verbatim. </div>
-
 <hr>
-<h2>Definition List</h2>
+<h2 id="definition-list"><a href="#definition-list">Definition List</a></h2>
 <p><em>End of test file.</em></p>
 <p>This is the footnote text. <a href="#user-content-fnref-1">↩</a></p>

@@ -25,7 +25,3 @@ Every time I start or pull a .NET project in JetBrains Rider I run this short ch
 	Verify the `dotnet` executable active, multiple SDKs + Rider’s bundled runtime can lead to mismatches (e.g. `*.blazor.css` not resolving).
 
 Anything else to add?
-
-> 💡 **Got another tip?** Drop me an email at [aruiz@greencsv.dev](mailto:aruiz@greencsv.dev)!
-
-while I add some comment service

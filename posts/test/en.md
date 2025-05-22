@@ -6,10 +6,11 @@ tags:
   - test
   - markdown
 summary: This post has testing purpses, yeah only that
-cover: ""
+cover: 
 language: en
 published: true
 ---
+## Contents
 
 # Test Markdown Features
 
@@ -32,8 +33,7 @@ This file contains example Markdown elements to use as a visual reference.
 ###### H6 Heading
 
 ---
-
-## Paragraphs and Emphasis
+## Paragraphs and Emphasis 
 
 Normal paragraph text. **Bold text**, _italic text_, **_bold italic_**, ~~strikethrough~~.
 
