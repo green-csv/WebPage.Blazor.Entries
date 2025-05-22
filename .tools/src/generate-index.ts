@@ -1,13 +1,9 @@
-// generate-index.ts
-// Run with: deno run --allow-read --allow-write generate-index.ts
-
 import { paths } from "./config.ts";
 import matterPkg from "npm:gray-matter@4.0.3";
 import {
   join,
   resolve,
   relative,
-  fromFileUrl,
   dirname,
 } from "https://deno.land/std@0.203.0/path/mod.ts";
 

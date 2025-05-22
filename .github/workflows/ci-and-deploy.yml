@@ -19,21 +19,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: denoland/setup-deno@v2
         with:
-          node-version: 'lts/*'
+          deno-version: v2.x
 
       - name: Prepare public assets folder
         run: mkdir -p public/posts-assets
 
       - name: Build HTML, index & metadata
+        working-directory: .tools
         run: |
-          cd .tools
-          npm ci
-          npm run build:html
-          npm run build:index
-          npm run build:metadata
+          # preload remote imports
+          deno cache generate-html.ts generate-index.ts update-metadata.ts
+
+          deno run build:html
+          deno run build:index
+          deno run build:metadata
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
