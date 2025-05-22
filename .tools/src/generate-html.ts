@@ -45,8 +45,6 @@ async function mdToHtml(markdown: string, slug: string): Promise<string> {
     .use(remarkObsidian)
     .use(remarkToc, {
       heading: "Contents",
-      tight: true,
-      maxDepth: 4,
     })
     .use(remarkEmbedderPlugin, { transformers: [oembedTransformerPlugin] })
     .use(remarkRehype, { allowDangerousHtml: true })

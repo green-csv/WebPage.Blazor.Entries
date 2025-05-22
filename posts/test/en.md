@@ -10,15 +10,15 @@ cover:
 language: en
 published: true
 ---
-## Contents
 
 # Test Markdown Features
 
 This file contains example Markdown elements to use as a visual reference.
 
 ---
-
-## Headings
+# Contents
+---
+# Headings
 
 # H1 Heading
 
