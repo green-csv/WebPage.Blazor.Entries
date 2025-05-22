@@ -108,7 +108,7 @@ Overall, on my station with a dedicated GPU it’s fast, but on smaller machines
 
 In continue configured for each context available a here are some insights 
 
-<div>
+<p>
 <video 
 controls width="100%" 
 alt="Mellum Context completion"
@@ -116,9 +116,9 @@ src="https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jet
 >
   Your browser doesn’t support video.
 </video>
-</div>
+</p>
 
-<div > 
+<p> 
 <video 
 controls width="100%" 
 alt="Mellum Instructions"
@@ -126,7 +126,7 @@ src="https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jet
 >
   Your browser doesn’t support video.
 </video>
-</div>
+</p>
 
 [^1][^2][^3][^4][^5][^6][^7][^8][^9][^10]
 

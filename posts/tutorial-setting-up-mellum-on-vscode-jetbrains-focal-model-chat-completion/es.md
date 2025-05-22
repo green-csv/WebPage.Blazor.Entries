@@ -107,7 +107,7 @@ En mi máquina con GPU dedicada, el modelo funciona rápido, osea no me quejo en
 
 Con Continue configurado para cada contexto, dejo aquí mis insights 
 
-<div>
+<p>
 <video 
 controls width="100%" 
 alt="Mellum Context completion"
@@ -115,9 +115,9 @@ src="https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jet
 >
   Your browser doesn’t support video.
 </video>
-</div>
+</p>
 
-<div > 
+<p > 
 <video 
 controls width="100%" 
 alt="Mellum Instructions"
@@ -126,7 +126,7 @@ src="https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jet
   Your browser doesn’t support video.
 </video>
 
-</div>
+</p>
 
 
 
