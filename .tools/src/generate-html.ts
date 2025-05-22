@@ -10,9 +10,9 @@ import remarkRehype from "npm:remark-rehype";
 import rehypeRaw from "npm:rehype-raw";
 import rehypeHighlight from "npm:rehype-highlight";
 import rehypeSlug from "npm:rehype-slug";
-import rehypeAutolinkHeadings from "npm:rehype-autolink-headings";
 import rehypeStringify from "npm:rehype-stringify";
 import remarkToc from "npm:remark-toc";
+import { visit } from "npm:unist-util-visit";
 import {
   dirname,
   join,
@@ -41,7 +41,7 @@ async function mdToHtml(markdown: string, slug: string): Promise<string> {
   const file = await unified()
     .use(remarkParse)
     .use(remarkFrontmatter, ["yaml"])     
-    .use(remarkGfm)
+    .use(remarkGfm)    
     .use(remarkObsidian)
     .use(remarkToc, {
       heading: "Contents",

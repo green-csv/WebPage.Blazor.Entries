@@ -102,16 +102,17 @@ Tweak any settings in your `Modelfile`, then rebuild with `ollama create` as abo
 
 **Continue**[^10] lets you hook any local or remote model into VS Code, select Ollama as your provider, then Add a Local Model even though it isn’t in the Ollama registry by default. Configure per-context assistants from the Continue UI, and you’ll get Mellum focal context completions right in VS Code.
 
-![Continue configuration for Ollama + Mellum ](https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/img-20250522093033.png)
+![Continue configuration for Ollama + Mellum ](https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/img-20250522093033.png)
 
 Overall, on my station with a dedicated GPU it’s fast, but on smaller machines you can quantize the model to fit your needs. Now I can zip between Unity and VS Code with context-aware completions via Mellum.
 
 In continue configured for each context available a here are some insights 
 
-![Mellum Context completion](https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/GameManager.mp4)
+![Mellum Context completion](https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/GameManager.mp4)
 
-![Mellum Instructions](https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/ShiInputManager.mp4)
+![Mellum Instructions](https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/ShiInputManager.mp4)
 
+[^1][^2][^3][^4][^5][^6][^7][^8][^9][^10]
 
 [^1]:Chang, L. (n.d.). _Model file specification Ollama_ [Documentation]. GitHub. Retrieved May 21, 2025, from [https://github.com/lloydchang/ollama-ollama/blob/main/docs/modelfile.md](https://github.com/lloydchang/ollama-ollama/blob/main/docs/modelfile.md)
 

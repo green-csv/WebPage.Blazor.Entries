@@ -16,6 +16,7 @@
     "npm:rehype-raw@7": "7.0.0",
     "npm:rehype-slug@6": "6.0.0",
     "npm:rehype-stringify@^10.0.1": "10.0.1",
+    "npm:remark-footnotes@5": "5.0.0",
     "npm:remark-frontmatter@5": "5.0.0",
     "npm:remark-gfm@^4.0.1": "4.0.1",
     "npm:remark-obsidian@^1.8.0": "1.8.0",
@@ -1214,6 +1215,10 @@
         "unified"
       ]
     },
+    "remark-footnotes@5.0.0": {
+      "integrity": "sha512-bmRA8Xel4YZA5PphUOdamG3Cf3BshoGZQlwVqF+bv0Ei1/b9ETOSyoKtpVAk8zIRJ2dAwio2HFnbC9wjLmy02A==",
+      "deprecated": true
+    },
     "remark-frontmatter@5.0.0": {
       "integrity": "sha512-XTFYvNASMe5iPN0719nPrdItC9aU0ssC4v14mH1BCi1u0n1gAocqcujWUrByftZTbLhRtiKRyjYTSIOcr69UVQ==",
       "dependencies": [
@@ -1484,6 +1489,7 @@
         "npm:rehype-raw@7",
         "npm:rehype-slug@6",
         "npm:rehype-stringify@^10.0.1",
+        "npm:remark-footnotes@5",
         "npm:remark-frontmatter@5",
         "npm:remark-gfm@^4.0.1",
         "npm:remark-obsidian@^1.8.0",

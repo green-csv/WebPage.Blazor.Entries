@@ -112,6 +112,8 @@ Con Continue configurado para cada contexto, dejo aquí mis insights
 ![Mellum Instructions](https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/ShiInputManager.mp4)
 
 
+[^1][^2][^3][^4][^5][^6][^7][^8][^9][^10]
+
 [^1]:Chang, L. (n.d.). _Model file specification Ollama_ [Documentation]. GitHub. Retrieved May 21, 2025, from [https://github.com/lloydchang/ollama-ollama/blob/main/docs/modelfile.md](https://github.com/lloydchang/ollama-ollama/blob/main/docs/modelfile.md)
 
 [^2]:JetBrains. (2025a, February). Why and how JetBrains built Mellum – the LLM designed for code completion. _JetBrains Blog._ Retrieved May 21, 2025, from [https://blog.jetbrains.com/ai/2025/02/why-and-how-jetbrains-built-mellum-the-llm-designed-for-code-completion/](https://blog.jetbrains.com/ai/2025/02/why-and-how-jetbrains-built-mellum-the-llm-designed-for-code-completion/)
