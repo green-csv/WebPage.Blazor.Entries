@@ -55,5 +55,31 @@
         "cover": null
       }
     }
+  },
+  {
+    "slug": "tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion",
+    "tags": [
+      "tutorial",
+      "ollama",
+      "continue",
+      "vs-Code",
+      "jetbrains"
+    ],
+    "translations": {
+      "en": {
+        "title": "Tutorial: Setting up Mellum focal model on VsCode with Continue",
+        "date": "2025-05-21T00:00:00.000Z",
+        "filename": "posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/en.html",
+        "summary": "walkthrough configuring JetBrains Mellum LLM with Ollama and Continue on VSCode",
+        "cover": null
+      },
+      "es": {
+        "title": "Tutorial: Setting up Mellum focal model on VsCode with Continue",
+        "date": "2025-05-21T00:00:00.000Z",
+        "filename": "posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/es.html",
+        "summary": "Guía pa' configurar el modelo Mellum de JetBrains con Ollama y Continue en VSCode.",
+        "cover": null
+      }
+    }
   }
 ]

@@ -1,0 +1,109 @@
+<h1 id="contents">Contents</h1>
+<ul>
+<li><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#tutorial-set-up--running-mellum">Tutorial: Set Up &#x26; Running Mellum</a></li>
+<li><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#agregar-mellum-a-ollama">Agregar Mellum a Ollama</a></li>
+<li><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#vs-code-continue--ollama">VS Code, Continue &#x26; Ollama</a></li>
+</ul>
+<h1 id="tutorial-set-up--running-mellum">Tutorial: Set Up &#x26; Running Mellum</h1>
+<ol>
+<li>Clonar Mellum guff desde el repo de Jetbrains</li>
+</ol>
+<pre><code class="hljs language-bash">   git <span class="hljs-built_in">clone</span> https://huggingface.co/JetBrains/Mellum-4b-base-gguf
+</code></pre>
+<p>(~4.5 GB)<sup><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></p>
+<ol start="2">
+<li>
+<p>Instalar Ollama<sup><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fn-7" id="user-content-fnref-7" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>
+Descarga e instala el paquete correspondiente según al sistema operativo host.</p>
+</li>
+<li>
+<p>Instalar Continue<sup><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fn-10" id="user-content-fnref-10" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup> en VS Code
+Agrega la extensión Continue con esto pretenderemos conectar Mellum a través de Ollama.</p>
+</li>
+</ol>
+<h1 id="agregar-mellum-a-ollama">Agregar Mellum a Ollama</h1>
+<ol>
+<li>En el directorio donde se clono Mellum, crear un archivo llamado <code>Modelfile</code> con</li>
+</ol>
+<pre><code class="hljs language-text">FROM ./mellum-4b-base.Q8_0.gguf
+# PARAMETER &#x3C;parameter> &#x3C;value>
+
+SYSTEM "You are a completion assistant. Predict the most likely continuation of the given input accurately and concisely."
+
+PARAMETER temperature      0.2
+PARAMETER top_p            0.9
+PARAMETER top_k            40
+PARAMETER repeat_penalty   1.2
+PARAMETER repeat_last_n    128
+PARAMETER num_predict      512
+PARAMETER num_ctx          8192
+
+PARAMETER stop "###"
+PARAMETER stop "\n\n"
+
+</code></pre>
+<p>Estas directivas provienen de la especificación del Modelfile de Ollama<sup><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup>.</p>
+<ol start="2">
+<li><em>(Opcional)</em> Para ejecutar una versión quantized en hardware modesto (a costa de algo de precisión):</li>
+</ol>
+<blockquote>
+<p><a href="https://ollama.readthedocs.io/en/import/#quantizing-a-model">https://ollama.readthedocs.io/en/import/#quantizing-a-model</a></p>
+</blockquote>
+<ol start="3">
+<li>Crea el modelo en Ollama</li>
+</ol>
+<pre><code class="hljs language-pws">ollama create Mellum -f .\Modelfile`
+</code></pre>
+<p>El modelo base en <code>FROM</code> coincida con el usado con el Modelfile creado<sup><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fn-1" id="user-content-fnref-1-2" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup>.</p>
+<ol start="4">
+<li>Validar los valores por defecto</li>
+</ol>
+<pre><code>ollama show Mellum
+</code></pre>
+<p>Algo así aparecería en consola:</p>
+<pre><code> Model
+    architecture        llama
+    parameters          4.0B
+    context length      8192
+    embedding length    3072
+    quantization        Q8_0
+
+  Capabilities
+    completion
+
+  Parameters
+    top_k             40
+    top_p             0.9
+    num_ctx           8192
+    num_predict       512
+    repeat_last_n     128
+    repeat_penalty    1.2
+    stop              "###"
+    stop              "\n\n"
+    temperature       0.2
+
+</code></pre>
+<p>Los valores se pueden ajustar  <code>Modelfile</code> y reconstruir usando <code>ollama create</code> nuevamente.</p>
+<h1 id="vs-code-continue--ollama">VS Code, Continue &#x26; Ollama</h1>
+<p><strong>Continue</strong><sup><a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fn-10" id="user-content-fnref-10-2" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup>  permite conectar modelos locales o remotos en VS Code. Selecciona Ollama como proveedor, agrega el modelo Mellum manualmente (ya que no está en el registro oficial), se puede configurar asistentes por contexto desde la interfaz de Continue. Con esto obtener completaciones enfocadas al contexto.</p>
+<p><img src="https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/img-20250522093033.png" alt="Continue configuration for Ollama + Mellum "></p>
+<p>En mi máquina con GPU dedicada, el modelo funciona rápido, osea no me quejo en velocidad ni recursos; En sistemas más modestos, se puede usar quantized para adaptarlo al hardware.</p>
+<p>Con Continue configurado para cada contexto, dejo aquí mis insights</p>
+<p><img src="https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/GameManager.mp4" alt="Mellum Context completion"></p>
+<p><img src="https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/ShiInputManager.mp4" alt="Mellum Instructions"></p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-3">
+<p>JetBrains. (2025b, April). Mellum goes open source: A purpose‐built LLM for developers, now on Hugging Face. <em>JetBrains Blog.</em> Retrieved May 21, 2025, from <a href="https://blog.jetbrains.com/ai/2025/04/mellum-goes-open-source-a-purpose-built-llm-for-developers-now-on-hugging-face/">https://blog.jetbrains.com/ai/2025/04/mellum-goes-open-source-a-purpose-built-llm-for-developers-now-on-hugging-face/</a> <a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fnref-3" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-7">
+<p>Ollama. (2025). Download Ollama on Windows [Software]. Retrieved May 21, 2025, from <a href="https://ollama.com/download/windows">https://ollama.com/download/windows</a> <a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fnref-7" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-10">
+<p>Continue.dev. (2025). <em>Continue – Open-source AI code assistant</em> [Extension]. Visual Studio Marketplace. Retrieved May 21, 2025, from <a href="https://marketplace.visualstudio.com/items?itemName=Continue.continue">https://marketplace.visualstudio.com/items?itemName=Continue.continue</a> <a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fnref-10" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a> <a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fnref-10-2" data-footnote-backref="" aria-label="Back to reference 3-2" class="data-footnote-backref">↩<sup>2</sup></a></p>
+</li>
+<li id="user-content-fn-1">
+<p>Chang, L. (n.d.). <em>Model file specification Ollama</em> [Documentation]. GitHub. Retrieved May 21, 2025, from <a href="https://github.com/lloydchang/ollama-ollama/blob/main/docs/modelfile.md">https://github.com/lloydchang/ollama-ollama/blob/main/docs/modelfile.md</a> <a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a> <a href="entry/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion#user-content-fnref-1-2" data-footnote-backref="" aria-label="Back to reference 4-2" class="data-footnote-backref">↩<sup>2</sup></a></p>
+</li>
+</ol>
+</section>
