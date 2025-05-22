@@ -101,15 +101,15 @@ Los valores se pueden ajustar  `Modelfile` y reconstruir usando `ollama create` 
 
 **Continue**[^10]  permite conectar modelos locales o remotos en VS Code. Selecciona Ollama como proveedor, agrega el modelo Mellum manualmente (ya que no está en el registro oficial), se puede configurar asistentes por contexto desde la interfaz de Continue. Con esto obtener completaciones enfocadas al contexto.
 
-![Continue configuration for Ollama + Mellum ](https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/img-20250522093033.png)
+![Continue configuration for Ollama + Mellum ](https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/img-20250522093033.png)
 
 En mi máquina con GPU dedicada, el modelo funciona rápido, osea no me quejo en velocidad ni recursos; En sistemas más modestos, se puede usar quantized para adaptarlo al hardware.
 
 Con Continue configurado para cada contexto, dejo aquí mis insights 
 
-![Mellum Context completion](https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/GameManager.mp4)
+![Mellum Context completion](https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/GameManager.mp4)
 
-![Mellum Instructions](https://github.com/green-csv/WebPage.Blazor.Entries/blob/main/posts/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/ShiInputManager.mp4)
+![Mellum Instructions](https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/ShiInputManager.mp4)
 
 
 [^1][^2][^3][^4][^5][^6][^7][^8][^9][^10]
