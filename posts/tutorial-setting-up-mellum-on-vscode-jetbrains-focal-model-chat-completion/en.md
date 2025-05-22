@@ -108,9 +108,25 @@ Overall, on my station with a dedicated GPU it’s fast, but on smaller machines
 
 In continue configured for each context available a here are some insights 
 
-![Mellum Context completion](https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/GameManager.mp4)
+<div>
+<video 
+controls width="100%" 
+alt="Mellum Context completion"
+src="https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/GameManager.mp4" 
+>
+  Your browser doesn’t support video.
+</video>
+</div>
 
-![Mellum Instructions](https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/ShiInputManager.mp4)
+<div > 
+<video 
+controls width="100%" 
+alt="Mellum Instructions"
+src="https://entries.greencsv.dev/media/tutorial-setting-up-mellum-on-vscode-jetbrains-focal-model-chat-completion/ShiInputManager.mp4" 
+>
+  Your browser doesn’t support video.
+</video>
+</div>
 
 [^1][^2][^3][^4][^5][^6][^7][^8][^9][^10]
 
